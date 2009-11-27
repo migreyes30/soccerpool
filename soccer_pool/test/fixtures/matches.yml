@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  pool_id: 1
+  local: MyString
+  visitor: MyString
+  result: MyString
+
+two:
+  pool_id: 1
+  local: MyString
+  visitor: MyString
+  result: MyString
