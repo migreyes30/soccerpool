@@ -1,0 +1,17 @@
+<html>
+  <head>
+      <title> Open Pool <%= h @pool_name %> </title>
+  </head>
+  
+  <body>
+       <h1> Open Pool <%= h @pool_name %> </h1> 
+       <% form_tag :action => 'draw' do %>
+          <p>
+            Please input the number of matches for the pool:
+              <%= text_field_tag 'number', @n %>
+          </p>
+          <%= submit_tag 'Generate' %>
+       <% end %>
+       
+  </body>
+</html>

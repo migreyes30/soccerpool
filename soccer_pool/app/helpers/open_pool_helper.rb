@@ -1,0 +1,2 @@
+module OpenPoolHelper
+end
