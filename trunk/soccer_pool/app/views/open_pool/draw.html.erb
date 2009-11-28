@@ -1,0 +1,28 @@
+<html>
+  <head>
+      <title> Open Pool <%= h @pool_name %> </title>
+  </head>
+  
+  <body>
+       <h1>Open Pool <%= h @pool_name %> </h1> 
+      
+          <p>
+            There are <%= @number %> matches :
+          </p>
+        
+        
+        <% form_tag :action => 'save' do %>
+          <table>
+              <% @number.times do |i| %>
+                  <tr> 
+                        <td> match <%= i%> </td>
+                        <td> <%= text_field_tag 'local', @matches_array[i].local %> </td>
+                        <td> <%= text_field_tag 'visitor', @matches_array[i].visitor %> </td>
+                  </tr>
+              <%end%>
+         </table>
+        <%= submit_tag 'Save' %>
+       <% end %> 
+       
+  </body>
+</html>

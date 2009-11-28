@@ -1,0 +1,24 @@
+<html>
+  <head>
+      <title> Open Pool <%= h @pool_name %> </title>
+  </head>
+  
+  <body>
+       <h1>Open Pool <%= h @pool_name %> </h1> 
+      
+          <p>
+            There are <%= @number %> matches :
+          </p>
+        
+          <table>
+              <% @number.times do |i| %>
+                  <tr> 
+                        <td> match <%= i%> </td>
+                        <td> <%= @matches_array[i].local %> </td>
+                        <td> <%= @matches_array[i].visitor %> </td>
+                  </tr>
+              <%end%>
+         </table>
+         
+  </body>
+</html>
