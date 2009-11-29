@@ -72,6 +72,24 @@
 	<% if flash[:error] %> 
   	<p style="color: red"><%= flash[:error] %></p> 
 	<% end %>
+	
+	
+<div id="menu" style="position: absolute; top: 75px;" class="menu">
+	<table id="matches_tables" style="border: 0px">
+		<th>Main Menu</th>
+		<tr>
+			<td>
+					Opened Pool				
+			</td>
+		</tr>
+		<tr>
+			<td>
+					Results
+			</td>
+		</tr>
+	</table>
+</div>
+
     <%= yield :layout %>    
     <div id="footer" style="position: absolute; bottom: 1px;">
     <hr/>    
