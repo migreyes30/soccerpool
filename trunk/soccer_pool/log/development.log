@@ -1146,3 +1146,2575 @@ ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" wit
   C:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:25:52) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 80ms (View: 79, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:25:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 22:25:58) [GET]
+Rendering session/new
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-26 22:26:00) [GET]
+Rendering users/new
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-26 22:26:11) [GET]
+Rendering users/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-26 22:26:34) [GET]
+Rendering users/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 22:26:38) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:44:36) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 63ms (View: 61, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:44:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 22:44:39) [GET]
+Rendering session/new
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 22:44:46) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"g3V/RLXKy72GZcAJ+rz2d+Mpe1FO99kGSf/riUv85Ho=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 19ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:44:46) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:44:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:46:09) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:46:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:46:25) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:46:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 22:46:27) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 22:46:34) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Ypf/oD9UYu9pHzDUtMBahrX6JKV5aXE097WKDqnVHzg=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:46:34) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:46:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:47:48) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:47:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:47:58) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:47:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 22:47:59) [GET]
+Rendering session/new
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 22:48:06) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"cI8wyRRQd+kI3nUlx57I0O3e5WtrB9rbycS+q3eoRyw=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:48:06) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (54.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 65ms (View: 9, DB: 55) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:48:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:48:30) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:48:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 22:48:32) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 22:48:39) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"k8QJMTNfVRrVGlgMIOCYXlPkBySkXLBNR8jBQoM52Fs=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 72ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:48:39) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:48:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:49:10) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:49:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 22:55:53) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 22:55:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 22:55:55) [GET]
+Rendering session/new
+Completed in 59ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 22:56:59) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"kcSIua4Q7zaIAfH343ZjN5Ud6DDxOTNd6eSPij97JxE=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template session/create.erb in view path app/views):
+  app/controllers/session_controller.rb:19:in `create'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:00:11) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 78ms (View: 77, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:00:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:00:28) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:00:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 23:00:29) [GET]
+Rendering session/new
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 23:00:55) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"QK97w9yO/KsZ/8jMjH3XGDb66+Weh1Vo+L+l+loL2hM=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template session/menu.erb in view path app/views):
+  app/controllers/session_controller.rb:19:in `create'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:03:27) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:03:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:03:35) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:03:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 23:03:36) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 23:03:43) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"+u/3AiYsbkjPRcZbvXvajirUUWlRcj9xk8EgdmW8MgU=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+
+NoMethodError (undefined method `link_to' for #<SessionController:0x24da2a4>):
+  app/controllers/session_controller.rb:19:in `create'
+
+Rendered rescues/_trace (30.3ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:10:07) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:10:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:10:19) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:10:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 23:10:21) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 23:10:29) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"z7I/GSLwqu91IkYi7LOVz+1nQtNeWfyOGxw9BasansU=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template session/menu.erb in view path app/views):
+  app/controllers/session_controller.rb:19:in `create'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:11:20) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:11:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 23:11:21) [GET]
+Rendering session/new
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 23:11:29) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"HWG1o4xUabyBk18GIKZNYao+DrKOHmY33AsWB74RFw0=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template session/menu.erb in view path app/views):
+  app/controllers/session_controller.rb:19:in `create'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:24:43) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:24:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:25:38) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:25:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-26 23:25:49) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-26 23:25:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-26 23:25:55) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-26 23:26:00) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"/N0FPBgM2ynBzdKQ83zRVGzTVAKRjSBOUnN9U2CaKww=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template session/menu.erb in view path app/views):
+  app/controllers/session_controller.rb:19:in `create'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-27 21:29:12) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 80ms (View: 78, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-27 21:29:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-27 21:29:14) [GET]
+Rendering session/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-27 21:29:33) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"+26KbKTx0JIHHdMbTKIXEAi/d0iKcZ00WuqThvBirWQ=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 31ms (View: 9, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-27 21:30:20) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"+26KbKTx0JIHHdMbTKIXEAi/d0iKcZ00WuqThvBirWQ=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 17ms (View: 5, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-27 21:57:01) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-27 21:57:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-27 21:57:44) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-27 21:57:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-27 21:57:45) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-27 21:57:50) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"rRZgPXva92jyvIbWLuzPq3/VTamqbuM0kv1fpKHLlPE=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 11ms (View: 1, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 07:40:28) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 214ms (View: 211, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 07:40:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 07:55:19) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 07:55:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 07:55:26) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 07:55:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 07:55:41) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 27ms (View: 26, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 07:55:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 07:55:42) [GET]
+Rendering session/new
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 07:55:46) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"qiW0ZJKmtCTkKY4xVbR1ejhu5eLa6ceR+rc0GlqeN+Y=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #19 of app/views/principal/menu.html.erb:
+16: <div>
+17:       <p>
+18:         	Click here to logout
+19:       	<%= input :type => 'button' %>
+20:     	</p>
+21: </div>
+
+    app/views/principal/menu.html.erb:19:in `input'
+    app/views/principal/menu.html.erb:19
+    app/controllers/session_controller.rb:18:in `create'
+
+Rendered rescues/_trace (37.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 07:56:11) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"qiW0ZJKmtCTkKY4xVbR1ejhu5eLa6ceR+rc0GlqeN+Y=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #20 of app/views/principal/menu.html.erb:
+17: 	    <% form_tag :action => 'menu' do %>
+18:       <p>
+19:         	Click here to logout
+20:       	<%= input :type => 'button' %>
+21:     	</p>
+22: 	<% end %>
+23: </div>
+
+    app/views/principal/menu.html.erb:20:in `input'
+    app/views/principal/menu.html.erb:20
+    app/views/principal/menu.html.erb:17
+    app/controllers/session_controller.rb:18:in `create'
+
+Rendered rescues/_trace (102.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:02:22) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:02:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:02:35) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:02:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:02:37) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:02:41) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 32ms (View: 22, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#menu (for 127.0.0.1 at 2009-11-28 08:02:52) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM="}
+
+ActionController::UnknownAction (No action responded to menu. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:04:16) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 19ms (View: 8, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#logout (for 127.0.0.1 at 2009-11-28 08:04:19) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM="}
+
+ActionController::UnknownAction (No action responded to logout. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:04:42) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 23ms (View: 6, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:04:43) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM="}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" IS NULL) LIMIT 1[0m
+Rendering session/new
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:04:54) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 13ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:06:27) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM="}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" IS NULL) LIMIT 1[0m
+Rendering session/new
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#show (for 127.0.0.1 at 2009-11-28 08:06:29) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:06:38) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM="}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" IS NULL) LIMIT 1[0m
+Rendering session/new
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:07:29) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"miuge"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering session/new
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:07:40) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 56ms (View: 44, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#show (for 127.0.0.1 at 2009-11-28 08:09:23) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:09:28) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:09:32) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 15ms (View: 3, DB: 1) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:09:58) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 20ms (View: 8, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:10:40) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"515fNOWkpvcYGJXPvMhSlWrCxFZLAgFQl/IcXxdNLMM=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 32ms (View: 9, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#show (for 127.0.0.1 at 2009-11-28 08:13:09) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#show (for 127.0.0.1 at 2009-11-28 08:13:16) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#show (for 127.0.0.1 at 2009-11-28 08:13:23) [GET]
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:13:51) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:13:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:14:03) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:14:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:14:06) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:14:12) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 29ms (View: 19, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:15:51) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering /principal/menu
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#menu (for 127.0.0.1 at 2009-11-28 08:15:53) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+
+ActionController::UnknownAction (No action responded to menu. Actions: create, destroy, and new):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:16:48) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" IS NULL) LIMIT 1[0m
+Rendering session/new
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:16:51) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:16:51) [GET]
+Rendering principal/menu
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:16:52) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:16:54) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:16:54) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:16:55) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:16:57) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:16:59) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:21:43) [POST]
+  Parameters: {"commit"=>"A VEERRR", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 85ms (View: 84, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:21:45) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:21:46) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:21:47) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:21:48) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:21:49) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:22:03) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:22:04) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#destroy (for 127.0.0.1 at 2009-11-28 08:22:07) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+
+ActionController::UnknownAction (No action responded to destroy. Actions: menu):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PrincipalController#index (for 127.0.0.1 at 2009-11-28 08:23:03) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: logout and menu):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:23:07) [GET]
+Rendering principal/menu
+Completed in 28ms (View: 26, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#logout (for 127.0.0.1 at 2009-11-28 08:23:09) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"Wo3Y/xCFGkTJxUHoaGDb75ifTZWju/gMMXsytQaxwq4="}
+Rendering /session/destroy
+
+ActionView::MissingTemplate (Missing template /session/destroy.erb in view path app/views):
+  app/controllers/principal_controller.rb:8:in `logout'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:24:55) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:24:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:25:07) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:25:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:25:08) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:25:34) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:25:38) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"NhULkJeCx/kgLy6hdrXQSm7PqECe/pyK1yg2uYq9QUA=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:25:38) [GET]
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:25:40) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"NhULkJeCx/kgLy6hdrXQSm7PqECe/pyK1yg2uYq9QUA="}
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:25:59) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"NhULkJeCx/kgLy6hdrXQSm7PqECe/pyK1yg2uYq9QUA="}
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#logout (for 127.0.0.1 at 2009-11-28 08:26:02) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"NhULkJeCx/kgLy6hdrXQSm7PqECe/pyK1yg2uYq9QUA="}
+
+ActionView::MissingTemplate (Missing template principal/destroy.erb in view path app/views):
+  app/controllers/principal_controller.rb:8:in `logout'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PrincipalController#logout (for 127.0.0.1 at 2009-11-28 08:26:53) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"NhULkJeCx/kgLy6hdrXQSm7PqECe/pyK1yg2uYq9QUA="}
+
+ActionController::UnknownAction (No action responded to logout. Actions: destroy and menu):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:27:09) [POST]
+  Parameters: {"commit"=>"A VER", "authenticity_token"=>"NhULkJeCx/kgLy6hdrXQSm7PqECe/pyK1yg2uYq9QUA="}
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#destroy (for 127.0.0.1 at 2009-11-28 08:27:10) [POST]
+  Parameters: {"commit"=>"Logout", "authenticity_token"=>"NhULkJeCx/kgLy6hdrXQSm7PqECe/pyK1yg2uYq9QUA="}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/principal/destroy]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:27:10) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:27:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:27:50) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 62ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:27:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:37:48) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:37:50) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:37:55) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"UCMdTsxJRzKkWaYSoW8Sg1y6BIxB0F6IxA1EWzqMzSU=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:37:55) [GET]
+Rendering principal/menu
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 08:37:57) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:37:57) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:37:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:39:02) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:39:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:39:04) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:39:08) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"YItVKdLHmTgDX2b7z2Pbc7QUqVhROiXEEnLR11jnco4=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:39:08) [GET]
+Rendering principal/menu
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 08:39:10) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:39:10) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:39:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:40:54) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:42:04) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:42:09) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"yhPKtEcdHYfny+DDcphbduMG3oF6JR5dOOq7djJa8vM=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:42:09) [GET]
+Rendering principal/menu
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 08:45:53) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:45:54) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:45:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:45:59) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-28 08:46:05) [GET]
+Rendering users/new
+Completed in 39ms (View: 38, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-11-28 08:46:20) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"isa", "password"=>"isa", "login"=>"isa", "email"=>"isa_rmz@hotmail.com"}, "commit"=>"Sign up", "authenticity_token"=>"/yLrGUohSmzyQxCh6z1KQEXd6i/waQOrIaoa8J/dPq8="}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'isa') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'isa_rmz@hotmail.com') LIMIT 1[0m
+Rendering users/new
+Completed in 200ms (View: 7, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-11-28 08:46:38) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"isadora", "password"=>"isadora", "login"=>"isadora", "email"=>"isa_rmz@hotmail.com"}, "commit"=>"Sign up", "authenticity_token"=>"/yLrGUohSmzyQxCh6z1KQEXd6i/waQOrIaoa8J/dPq8="}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."login") = 'isadora') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'isa_rmz@hotmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO "users" ("salt", "updated_at", "crypted_password", "remember_token_expires_at", "remember_token", "login", "email", "created_at") VALUES('35e136bfcba8188ef2cd9a481233428e0e9b2190', '2009-11-28 14:46:38', 'eee4f6b6237b9107ca38887c947b0c4abb8d66d1', NULL, NULL, 'isadora', 'isa_rmz@hotmail.com', '2009-11-28 14:46:38')[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/users]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:46:38) [GET]
+Rendering principal/menu
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 08:46:47) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:46:47) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:46:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:46:49) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:46:54) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"sYBkMvVDswv9FmiA97/O8cq8VrvfdHfEIpIIL2PLKrU=", "login"=>"isadora", "password"=>"isadora"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'isadora') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:46:54) [GET]
+Rendering principal/menu
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 08:47:02) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 08:47:02) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 08:47:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 08:47:33) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 08:47:39) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc=", "login"=>"isadora", "password"=>"isadora"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'isadora') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 08:47:39) [GET]
+Rendering principal/menu
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/principal/menu]
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePicks (20091127023757)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (72.0ms)[0m   [0mDROP TABLE "picks"[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20091127023757'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("matches")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pools")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091127023516)
+Migrating to CreatePools (20091127023630)
+Migrating to CreateMatches (20091127023713)
+Migrating to CreatePicks (20091127023757)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "picks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "match_id" integer, "pick" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091127023757')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("matches")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("picks")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("pools")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePicks (20091127023757)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "picks"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20091127023757'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("matches")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("pools")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091127023516)
+Migrating to CreatePools (20091127023630)
+Migrating to CreateMatches (20091127023713)
+Migrating to CreatePicks (20091127023757)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "picks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "match_id" integer, "pick" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091127023757')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("matches")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("picks")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("pools")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 10:36:57) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 10:36:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 10:37:00) [GET]
+Rendering session/new
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 10:37:08) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 56ms (DB: 1) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:37:08) [GET]
+Rendering principal/menu
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:37:47) [GET]
+Rendering principal/menu
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:38:06) [GET]
+Rendering principal/menu
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:39:13) [GET]
+Rendering principal/menu
+Completed in 72ms (View: 70, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:39:26) [GET]
+Rendering principal/menu
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:39:35) [GET]
+Rendering principal/menu
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:39:43) [GET]
+Rendering principal/menu
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:39:54) [GET]
+Rendering principal/menu
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:51:18) [GET]
+Rendering principal/menu
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:52:15) [GET]
+Rendering principal/menu
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:52:37) [GET]
+Rendering principal/menu
+ERROR: compiling _run_erb_app47views47principal47menu46html46erb RAISED compile error
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+     :onclick => render logout_path,
+                                   ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:17: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+     :name => "show_num",
+             ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:17: syntax error, unexpected ',', expecting ')'
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:18: syntax error, unexpected '}', expecting ')'
+     :value => "Show" },
+                       ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:19: syntax error, unexpected ')', expecting kEND
+  false) ).to_s); @output_buffer.concat "\n"
+                ^
+Function body:           def _run_erb_app47views47principal47menu46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Principal menu</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<div>\n"
+@output_buffer.concat "\t<table border=\"1\">\n"
+@output_buffer.concat "\t\t<th>\n"
+@output_buffer.concat "\t\t\tTabla Matches\n"
+@output_buffer.concat "\t\t</th>\n"
+@output_buffer.concat "\t\t<tr>\n"
+@output_buffer.concat "\t\t\t<td>\n"
+@output_buffer.concat "\t\t\t</td>\n"
+@output_buffer.concat "\t\t</tr>\n"
+@output_buffer.concat "\t</table>\n"
+@output_buffer.concat "\t\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( tag("input", {
+     :type => "button",
+     :onclick => render logout_path,
+     :name => "show_num",
+     :value => "Show" },
+  false) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\t\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<div style=\"position: absolute; top: 1px; right: 5px;\">\n"
+@output_buffer.concat "      <p>\n"
+@output_buffer.concat "        \t"; @output_buffer.concat(( link_to "Click here to logout", logout_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    \t</p>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:34:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+     :onclick => render logout_path,
+                                   ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:17: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+     :name => "show_num",
+             ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:17: syntax error, unexpected ',', expecting ')'
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:18: syntax error, unexpected '}', expecting ')'
+     :value => "Show" },
+                       ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:19: syntax error, unexpected ')', expecting kEND
+  false) ).to_s); @output_buffer.concat "\n"
+                ^) on line #16 of app/views/principal/menu.html.erb:
+13: 	
+14: 	<%= tag("input", {
+15:      :type => "button",
+16:      :onclick => render logout_path,
+17:      :name => "show_num",
+18:      :value => "Show" },
+19:   false) %>
+
+    app/views/principal/menu.html.erb:34:in `compile!'
+
+Rendered rescues/_trace (92.7ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:53:19) [GET]
+Rendering principal/menu
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 10:59:29) [GET]
+Rendering principal/menu
+ERROR: compiling _run_erb_app47views47principal47menu46html46erb RAISED compile error
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:14: syntax error, unexpected tASSOC, expecting '}'
+...\t";  form_tag {:controller => 'pick',:action =>'make_pick' ...
+                              ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:14: syntax error, unexpected ',', expecting '}'
+...rm_tag {:controller => 'pick',:action =>'make_pick' }  do ; ...
+                              ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:14: syntax error, unexpected kDO, expecting kEND
+...k',:action =>'make_pick' }  do ; @output_buffer.concat "\n"
+                              ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:27: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47principal47menu46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Principal menu</h1>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<div>\n"
+@output_buffer.concat "\t<table border=\"1\">\n"
+@output_buffer.concat "\t\t<th>\n"
+@output_buffer.concat "\t\t\tTabla Matches\n"
+@output_buffer.concat "\t\t</th>\n"
+@output_buffer.concat "\t\t<tr>\n"
+@output_buffer.concat "\t\t\t<td>\n"
+@output_buffer.concat "\t\t\t</td>\n"
+@output_buffer.concat "\t\t</tr>\n"
+@output_buffer.concat "\t</table>\n"
+@output_buffer.concat "\t<br />\n"
+@output_buffer.concat "\t\t";  form_tag {:controller => 'pick',:action =>'make_pick' }  do ; @output_buffer.concat "\n"
+@output_buffer.concat "          "; @output_buffer.concat(( submit_tag 'Make a Pick' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    ";  end ; @output_buffer.concat "\t\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<div style=\"position: absolute; top: 1px; right: 5px;\">\n"
+@output_buffer.concat "      <p>\n"
+@output_buffer.concat "        \t"; @output_buffer.concat(( link_to "Click here to logout", logout_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    \t</p>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:27:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:14: syntax error, unexpected tASSOC, expecting '}'
+...\t";  form_tag {:controller => 'pick',:action =>'make_pick' ...
+                              ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:14: syntax error, unexpected ',', expecting '}'
+...rm_tag {:controller => 'pick',:action =>'make_pick' }  do ; ...
+                              ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:14: syntax error, unexpected kDO, expecting kEND
+...k',:action =>'make_pick' }  do ; @output_buffer.concat "\n"
+                              ^
+/Users/Mike30/Semestre9/Design&Arq_Software/Proyecto/svn_soccer_pool/soccer_pool/app/views/principal/menu.html.erb:27: syntax error, unexpected kENSURE, expecting $end) on line #14 of app/views/principal/menu.html.erb:
+11: 		</tr>
+12: 	</table>
+13: 	<br />
+14: 		<% form_tag {:controller => 'pick',:action =>'make_pick' }  do %>
+15:           <%= submit_tag 'Make a Pick' %>
+16:     <% end %>	
+17: </div>
+
+    app/views/principal/menu.html.erb:27:in `compile!'
+
+Rendered rescues/_trace (34.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:00:32) [GET]
+Rendering principal/menu
+Completed in 82ms (View: 81, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#/pick (for 127.0.0.1 at 2009-11-28 11:00:37) [POST]
+  Parameters: {"commit"=>"Make a Pick", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+
+ActionController::UnknownAction (No action responded to /pick. Actions: menu):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 11:02:23) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 96ms (View: 95, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 11:02:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 11:02:24) [GET]
+Rendering session/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 11:02:31) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:02:31) [GET]
+Rendering principal/menu
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#/pick (for 127.0.0.1 at 2009-11-28 11:02:46) [POST]
+  Parameters: {"commit"=>"Make a Pick", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+
+ActionController::UnknownAction (No action responded to /pick. Actions: menu):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PickController#make_pick (for 127.0.0.1 at 2009-11-28 11:03:28) [GET]
+Rendering pick/make_pick
+Completed in 80ms (View: 78, DB: 0) | 200 OK [http://localhost/pick/make_pick]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 11:04:49) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 11:04:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 11:04:50) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 11:04:54) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:04:54) [GET]
+Rendering principal/menu
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PickController#make_pick (for 127.0.0.1 at 2009-11-28 11:04:56) [POST]
+  Parameters: {"commit"=>"Make a Pick", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+Rendering pick/make_pick
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pick/make_pick]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:05:31) [GET]
+Rendering principal/menu
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:06:41) [GET]
+Rendering principal/menu
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PickController#hola (for 127.0.0.1 at 2009-11-28 11:06:44) [POST]
+  Parameters: {"commit"=>"Make a Pick", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+
+ActionController::UnknownAction (No action responded to hola. Actions: make_pick and testa):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:08:49) [GET]
+Rendering principal/menu
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:10:01) [GET]
+Rendering principal/menu
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:10:55) [GET]
+Rendering principal/menu
+Completed in 65ms (View: 64, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:11:28) [GET]
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:11:44) [GET]
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 11:11:45) [POST]
+  Parameters: {"commit"=>"show results", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+
+ActionController::RoutingError (No route matches "/results/show_results" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:13:43) [GET]
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing ResultsController#show_results (for 127.0.0.1 at 2009-11-28 11:13:45) [POST]
+  Parameters: {"commit"=>"show results", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+Rendering results/show_results
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/results/show_results]
+
+
+Processing ResultsController#show_results (for 127.0.0.1 at 2009-11-28 11:14:00) [POST]
+  Parameters: {"commit"=>"show results", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+Rendering results/show_results
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/results/show_results]
+
+
+Processing PickController#make_pick (for 127.0.0.1 at 2009-11-28 11:14:03) [POST]
+  Parameters: {"commit"=>"Make a Pick", "authenticity_token"=>"vlcsFdOvVC9z/YSNCg2S7whYg8YBc2vhx+mJeUFLcAc="}
+Rendering pick/make_pick
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pick/make_pick]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:18:54) [GET]
+Rendering principal/menu
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:19:23) [GET]
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:19:40) [GET]
+Rendering principal/menu
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:20:26) [GET]
+Rendering principal/menu
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 11:20:48) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 11:20:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 11:33:56) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 93ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 11:33:56) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 11:33:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 11:33:58) [GET]
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 11:34:03) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"FWodXS+6z1mGuRP6H9A5Kg5qOlsT/v2gHiqX2Al+JDo=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:34:03) [GET]
+Rendering principal/menu
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 11:38:34) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 11:38:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 11:38:38) [GET]
+Rendering session/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 11:38:42) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"FWodXS+6z1mGuRP6H9A5Kg5qOlsT/v2gHiqX2Al+JDo=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 11:38:42) [GET]
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PickController#make_pick (for 127.0.0.1 at 2009-11-28 11:38:50) [POST]
+  Parameters: {"commit"=>"Make a Pick", "authenticity_token"=>"FWodXS+6z1mGuRP6H9A5Kg5qOlsT/v2gHiqX2Al+JDo="}
+Rendering pick/make_pick
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pick/make_pick]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 15:13:14) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 15:13:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 15:45:43) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 133ms (View: 131, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 15:45:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 15:45:53) [GET]
+Rendering session/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 15:45:57) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"FWodXS+6z1mGuRP6H9A5Kg5qOlsT/v2gHiqX2Al+JDo=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 34ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 15:45:57) [GET]
+Rendering template within layouts/general
+Rendering principal/menu
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 15:45:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 17:12:44) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 116ms (View: 115, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 17:12:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 17:15:23) [GET]
+Rendering template within layouts/application
+Rendering session/new
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 17:15:27) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"FWodXS+6z1mGuRP6H9A5Kg5qOlsT/v2gHiqX2Al+JDo=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:15:27) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:16:33) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:16:35) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 17:21:32) [GET]
+Rendering template within layouts/general
+Rendering welcome/index
+Completed in 34ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 17:21:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 17:33:43) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 17:33:43) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 17:34:01) [GET]
+Rendering template within layouts/application
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 17:34:05) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"p69z5a35u9WG4rqqdN34wYnpCYob3r0VW8MYu9by7lE=", "login"=>"migue", "password"=>""}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering session/new
+Completed in 11ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 17:34:11) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"p69z5a35u9WG4rqqdN34wYnpCYob3r0VW8MYu9by7lE=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:34:11) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 17:40:32) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 17:40:32) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 134ms (View: 132, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 17:40:34) [GET]
+Rendering template within layouts/application
+Rendering session/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 17:40:39) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"/XrbM3VfUUJs/KleKCLKwhezgeog7vk1u5S3gXgY1Ic=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:40:39) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:45:15) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:45:16) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:48:34) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 31ms (View: 30, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:48:35) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:48:35) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:48:35) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:48:58) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 17:49:02) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 17:49:02) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 17:49:04) [GET]
+Rendering template within layouts/application
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 17:49:10) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"TNgFzLHHlUiZYJfbo5/cWgj4CE//dqRIr1G2Pi5E2Sg=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:49:10) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:50:27) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:51:32) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 17:53:40) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 17:53:40) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 17:53:42) [GET]
+Rendering template within layouts/application
+Rendering session/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 17:53:47) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"myqMk2OhBYwEojs1Zj/1aAVIFWW5laYIJKO8QHYm++4=", "login"=>"migue", "password"=>"migue"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:53:47) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 30ms (View: 29, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:55:44) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:55:45) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:55:45) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 17:55:46) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/principal/menu]
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091127023516)
+Migrating to CreatePools (20091127023630)
+Migrating to CreateMatches (20091127023713)
+Migrating to CreatePicks (20091127023757)
+Migrating to CreateResults (20091128235825)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "results" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "pool" integer, "score" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091128235825')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("matches")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("picks")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("pools")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("results")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+
+
+Processing SessionController#destroy (for 127.0.0.1 at 2009-11-28 18:00:45) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 80ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-11-28 18:00:45) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 61ms (View: 59, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionController#new (for 127.0.0.1 at 2009-11-28 18:00:47) [GET]
+Rendering template within layouts/application
+Rendering session/new
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 18:00:50) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"iFnWrDv0fSfwOFL1vxT58Eb6NrAbVrFJwM8EKRfWIds=", "login"=>"migue", "password"=>""}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering session/new
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/session]
+
+
+Processing SessionController#create (for 127.0.0.1 at 2009-11-28 18:00:55) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"iFnWrDv0fSfwOFL1vxT58Eb6NrAbVrFJwM8EKRfWIds=", "login"=>"migue", "password"=>"migue"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'migue') LIMIT 1[0m
+Redirected to http://localhost:3000/principal/menu
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/session]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 18:00:55) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/principal/menu]
+
+
+Processing PrincipalController#menu (for 127.0.0.1 at 2009-11-28 18:04:06) [GET]
+Rendering template within layouts/application
+Rendering principal/menu
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/principal/menu]
