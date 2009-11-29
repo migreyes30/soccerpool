@@ -32,16 +32,23 @@
         color: #000000; 
         background: #E6E6FA;
       }
-
+				
+      .menu {
+        border-collapse: collapse;
+        padding: 0px;
+        margin-bottom: 10px;
+        color: #000000; 
+        background: #E6E6FA;
+      }
+			
       td {
-        border: 1px solid #000000;
         padding: 10px;
         text-align: center;
       }
 
       th {
-        border: 1px solid #000000;
         padding: 10px;
+        border: 1px solid #000000;
         color: #008080;
         background: #B0E0E6;
       }
@@ -54,16 +61,25 @@
 
     </style>
 
-    <title><%= yield :title %></title>
+    <title>Soccer Pool</title>
 
   </head>
 
-  <body>    
+  <body>  
+	<% if flash[:notice]%> 
+  	<p style="color: green"> <%= flash[:notice] %></p> 
+	<% end %> 
+	<% if flash[:error] %> 
+  	<p style="color: red"><%= flash[:error] %></p> 
+	<% end %>
     <%= yield :layout %>    
+    <div id="footer" style="position: absolute; bottom: 1px;">
     <hr/>    
     <p class="footer">
-      Software Design and Architecture              
+      Software Design and Architecture   
+      (C) 2009 por Maricela Obeso y Miguel Ramirez
     </p>
+</div>
   </body>
 
 </html>

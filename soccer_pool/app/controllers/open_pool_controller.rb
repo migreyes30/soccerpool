@@ -19,5 +19,5 @@ class OpenPoolController < ApplicationController
      @number = params[:number].to_i
     create_matches
   end
-  end
+  
 end
