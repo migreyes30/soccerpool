@@ -1,6 +1,7 @@
 # This controller handles the login/logout function of the site.  
 class SessionController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
+  layout 'general'
   include AuthenticatedSystem
 
   # render new.rhtml
@@ -14,7 +15,9 @@ class SessionController < ApplicationController
         current_user.remember_me unless current_user.remember_token?
         cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => self.current_user.remember_token_expires_at }
       end
-      redirect_to "/principal/menu"
+      session["type_user"] = params[:login]
+      $admin = "admin"
+      redirect_to "/principal/main_layout"
     else
       render :action => 'new'
     end

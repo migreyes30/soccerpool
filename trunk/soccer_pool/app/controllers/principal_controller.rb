@@ -1,6 +1,6 @@
 class PrincipalController < ApplicationController
   
-  def menu
+  def main_layout
   
   end
 

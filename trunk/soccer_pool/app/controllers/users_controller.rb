@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	layout 'general'
   # Be sure to include AuthenticationSystem in Application Controller instead
   include AuthenticatedSystem
   
@@ -17,7 +18,9 @@ class UsersController < ApplicationController
     @user.save
     if @user.errors.empty?
       self.current_user = @user
-      redirect_to "/principal/menu"
+      session["type_user"] = params[:login]
+      $admin = "admin"
+      redirect_to "/principal/main_layout"
     else
       render :action => 'new'
     end
