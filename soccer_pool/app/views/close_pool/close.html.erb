@@ -9,6 +9,16 @@
 		
       <h2> Close the Pool </h2> 
       
+      
+      <% form_tag :action => 'change_status_to_close' do %>
+          <p>
+            Are you sure you want to close the current pool? 
+          </p>
+      
+          <%= submit_tag 'Yes' %>
+       <% end %>
+       
+       
     <% else %>   
 			<br />
 			<br />

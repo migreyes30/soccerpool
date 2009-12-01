@@ -10,15 +10,24 @@
 <h2> Pool  is  concluded with the following results</h2> 
       
 <table>
-      <th>Local</th> <th>VS</th> <th>Visitor</th> <th>Winner</th>
+       <tr>
+             <th> Match # </th>
+             <th> Local </th>
+             <th> V.S. </th>
+             <th> Visitor </th>
+             <th> Winner </th>
+      </tr>
+      <% i = 1%>
       <% @table_matches.each do |match| %>
                 
                 <tr>
-                    <td> <%= match.local %> </td>
-                    <td> VS </td>
-                    <td> <%= match.visitor %> </td>
-                    <td> <%= match.result %> </td>
+                    <td class="matches_table_td"><%=h i %></td>
+                    <td class="matches_table_td"> <%=h match.local %> </td>
+                    <td class="matches_table_td">v.s.</td>
+                    <td class="matches_table_td"> <%=h match.visitor %> </td>
+                    <td class="matches_table_td"> <%=h match.result %> </td>
                 </tr>
+                <% i = i + 1%>
       <%end%>
   </table>  
 

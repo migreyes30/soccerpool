@@ -10,15 +10,23 @@
        <h2> Pool <%= h @pool_name%> is saved </h2> 
  
   <table>
-      <th>Local</th><th>Visitor</th>
+    <tr>
+			<th> Match # </th>
+			<th> Local </th>
+			<th> V.S. </th>
+			<th> Visitor </th>
+		</tr>
+    <% i = 1%>
       <% @parametros.each_key do |key| %>
                 <%if  key.include?("local") %>
                 <tr>
-                    <td> <%= @parametros[key] %> </td>
-                    <td> <%= @parametros["visitor#{key[5..key.size-1]}"] %> </td>
+                    <td class="matches_table_td"><%=h i %></td>
+                    <td class="matches_table_td"> <%=h @parametros[key] %> </td>
+                    <td class="matches_table_td">v.s.</td>
+                    <td class="matches_table_td"> <%=h @parametros["visitor#{key[5..key.size-1]}"] %> </td>
                 </tr>
+                <% i = i + 1%>
                 <%end%>
-         
       <%end%>
   </table>    
 
