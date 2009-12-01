@@ -2,7 +2,8 @@ class CreateResults < ActiveRecord::Migration
   def self.up
     create_table :results do |t|
       t.integer :user_id
-      t.integer :pool
+      t.integer :pool_id
+      t.integer :match_id
       t.integer :score
 
       t.timestamps
