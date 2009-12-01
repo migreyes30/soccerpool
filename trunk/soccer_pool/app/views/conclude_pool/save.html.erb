@@ -1,11 +1,13 @@
-<html>
-  <head>
-      <title> Pool <%= h @pool_name %> </title>
-  </head>
-  
-  <body>
-  <div  id="save_concluded_pool" style="position: absolute; left: 200px;">
-       <h1> Pool  is  concluded with the following results</h1> 
+
+  <div id="save_concluded_pool" 
+				<% if  session["type_user"].to_s == $admin %>  
+					 style="position: absolute; left: 320px; top: 50px; z-index:1;"
+				<% else %>
+						style="position: absolute; left: 300px; top: 50px; z-index:1;"
+				<% end %>
+>
+
+<h2> Pool  is  concluded with the following results</h2> 
       
 <table>
       <th>Local</th> <th>VS</th> <th>Visitor</th> <th>Winner</th>
@@ -21,5 +23,3 @@
   </table>  
 
   </div>   
-  </body>
-</html>

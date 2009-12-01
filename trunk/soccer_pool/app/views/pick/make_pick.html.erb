@@ -1,2 +1,41 @@
-<h1>Pick make_pick</h1>
-<p>Find me in app/views/pick/make_pick.html.erb</p> 
+<div id="make_picks"  style="position: absolute; left: 300px; top: 50px; z-index:1;">
+      <h2> Enter your Picks</h2> 
+        
+      <% matches =  Array.new %>
+      <% @pool_matches_arr.each_index do |i|%>
+          <% temp_match_arr = Array.new %>
+          <% temp_match_arr << @pool_matches_arr[i].id %>
+          <% temp_match_arr << @pool_matches_arr[i].pool_id %>
+          <% temp_match_arr << @pool_matches_arr[i].local %>
+          <% temp_match_arr << @pool_matches_arr[i].visitor %> 
+          <% temp_match_arr << "result#{@pool_matches_arr[i].id}" %>
+          <% matches[i]= temp_match_arr %>
+      <%end%>
+      
+      
+      
+      <% form_tag :action => 'save' do %>  
+              
+          <p>
+            Please input the winner for each of the matches :
+          </p>
+          
+          <table>
+              <th>Local</th> <th>  </th> <th>Visitor</th> <th>Winner</th>
+              <% matches.each do |match| %>
+                  <tr> 
+                        <td>  <%= match[2]%> </td>
+                        <td> VS </td>
+                        <td> <%= match[3]%>  </td>
+                        <td> 
+                                <%= select_tag match[4], '<option> local </option>' \
+                                    '<option> visitor </option>'  \
+                                    '<option>tie</option>' %>
+                        </td>
+                  </tr>
+              <%end%>
+         </table>
+        <%= submit_tag 'Save' %>
+       <% end %> 
+</div>    
+
