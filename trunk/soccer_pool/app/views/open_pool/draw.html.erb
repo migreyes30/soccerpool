@@ -27,11 +27,19 @@
           </p>
           
           <table>
+          
+            <tr>
+              <th> Match # </th>
+              <th> Local </th>
+              <th> V.S. </th>
+              <th> Visitor </th>
+            </tr>
               <% @number.times do |i| %>
                   <tr> 
-                        <td> match <%= i%> </td>
-                        <td> <%= text_field_tag names[i*2] %> </td>
-                        <td> <%= text_field_tag names[i*2+1]%> </td>
+                        <td class="matches_table_td"><%=h i+1 %></td>
+                        <td class="matches_table_td"> <%= text_field_tag names[i*2] %> </td>
+                        <td class="matches_table_td">v.s.</td>
+                        <td class="matches_table_td"> <%= text_field_tag names[i*2+1]%> </td>
                   </tr>
               <%end%>
          </table>

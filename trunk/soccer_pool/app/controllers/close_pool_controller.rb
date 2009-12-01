@@ -30,4 +30,10 @@ class ClosePoolController < ApplicationController
   	
   end
 
+  def change_status_to_close
+    pool = Pool.all(:conditions => "status = 'opened'")[0]
+    pool.status = "closed"
+    pool.save
+    @pool_name = pool.name
+  end
 end
