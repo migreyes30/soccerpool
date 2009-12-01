@@ -14,11 +14,23 @@
 			<th>
 				User
 			</th>
-			
+			<% @pool_concluded.each do |pool| %>
+			<th>
+				<%=h pool.name %>
+			</th>
+			<% end%>
 			<th>
 				Total
 			</th>
 		</tr>
+		
+		<% @ren_user.each do |n| %>
+  	<tr>
+			<% n.each do |x| %>
+  	  <td class="matches_table_td"><%=h x %></td>
+ 	 		<% end %>
+ 	 	</tr>
+		<% end %>
 		
 	</table>
 
