@@ -1,0 +1,25 @@
+<html>
+  <head>
+      <title> Pool <%= h @pool_name %> </title>
+  </head>
+  
+  <body>
+  <div  id="save_concluded_pool" style="position: absolute; left: 200px;">
+       <h1> Pool  is  concluded with the following results</h1> 
+      
+<table>
+      <th>Local</th> <th>VS</th> <th>Visitor</th> <th>Winner</th>
+      <% @table_matches.each do |match| %>
+                
+                <tr>
+                    <td> <%= match.local %> </td>
+                    <td> VS </td>
+                    <td> <%= match.visitor %> </td>
+                    <td> <%= match.result %> </td>
+                </tr>
+      <%end%>
+  </table>  
+
+  </div>   
+  </body>
+</html>
