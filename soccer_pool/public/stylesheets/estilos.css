@@ -21,6 +21,10 @@
         color: #000000; 
         background: #E6E6FA;
       }
+      
+      .matches_table_td {
+      	border: 1px solid #000000;
+      }
 				
       .menu {
         border-collapse: collapse;
@@ -46,4 +50,15 @@
         font-size: 70%;
         color: #B0C4DE;
         text-align: center;
+      }
+      
+      .logout {
+        font-size: 80%;
+        color: #B0C4DE;
+        text-align: center;
+      }
+      
+      .user_name {
+      	color: #008080;
+      	font-size: 150%;
       }

@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     @user.save
     if @user.errors.empty?
       self.current_user = @user
-      session["type_user"] = params[:login]
+      session["type_user"] = @user.login
       $admin = "admin"
       redirect_to "/principal/main_layout"
     else
