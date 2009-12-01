@@ -17,14 +17,6 @@ class OpenPoolController < ApplicationController
   
   def draw
     @number = params[:number].to_i
-   # create_matches
-  end
-  
-  def create_matches
-    @matches_array = Array.new(@number)
-    @matches_array.each_index do |i| 
-       @matches_array[i]= Match.new()
-    end
   end
 
   def save
@@ -41,6 +33,5 @@ class OpenPoolController < ApplicationController
         end
     end
   end
-
   
 end
