@@ -11,7 +11,10 @@ class PrincipalController < ApplicationController
   		@pool_name = pool_array[INDEX_FOR_OPENED_POOL].name
   		@matches = pool_array[INDEX_FOR_OPENED_POOL].matches
   	else
-  		@pool_name = "There isn't a opened pool in this moment"
+  		@pool_name = %Q{
+  			There isn't a opened pool in this moment!<br /><br />
+  			Please, take look to the results
+  		}
   		@matches = []
   	end
 

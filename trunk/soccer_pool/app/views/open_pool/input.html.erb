@@ -6,6 +6,8 @@
 						style="position: absolute; left: 300px; top: 50px; z-index:1;"
 				<% end %>
 		>	
+		<% if @already_opened_pool.nil?%>
+		
        <h2> Open Pool <%= h @pool_name %> </h2> 
        <% form_tag :action => 'draw' do %>
           <p>
@@ -14,4 +16,12 @@
           </p>
           <%= submit_tag 'Generate' %>
        <% end %>
+     
+		<% else %>
+			<br />
+			<br />
+			<br />
+			<h2 align = "center"><%= @already_opened_pool %></h2>
+		<% end %>
+       
     </div>
