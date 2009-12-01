@@ -10,13 +10,13 @@ class PickController < ApplicationController
   		@NO_CLOSED_POOL = 0
   		open_pool = Pool.all(:conditions => "status = 'closed'")
   		if open_pool.size == @NO_CLOSED_POOL
- 		 		@unconcluded_pool = %Q{
+ 		 		@unpicked_pool = %Q{
  		 			You can't make a pick to a pool!<br /><br />
   				All the pools are conclude!<br /><br />
   				Please, look for the results!
   			}
   		else
- 		 		@unconcluded_pool = %Q{
+ 		 		@unpicked_pool = %Q{
   				The current pool: #{open_pool[0].name} is closed!<br /><br />
   				#{open_pool[0].name} status: #{open_pool[0].status}<br /><br />
 					Please, look for the results!
