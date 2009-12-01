@@ -1,4 +1,6 @@
 <div id="make_picks"  style="position: absolute; left: 300px; top: 50px; z-index:1;">
+     
+   <% if @unpicked_pool.nil?%> 
       <h2> Enter your Picks</h2> 
         
       <% matches =  Array.new %>
@@ -45,6 +47,13 @@
               <%end%>
          </table>
         <%= submit_tag 'Save' %>
-       <% end %> 
+       <% end %>
+       
+   <% else %>   
+			<br />
+			<br />
+			<br />
+			<h2 align = "center"><%= @unpicked_pool %></h2>
+	<% end %>
 </div>    
 
