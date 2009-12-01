@@ -23,10 +23,26 @@ class ConcludePoolController < ApplicationController
     pool = Pool.find(:all, :conditions => "id = #{@pool_id}")
     pool[0].status = 'concluded'
     pool[0].save
-    generate_results(@pool_id)
+    generate_results(@pool_id, @table_matches)
   end
   
-  def generate_results()
-  
+  def generate_results(pool_id,table_matches)
+    users_arr = User.all
+    table_matches.each do |match|
+        match_id = match.id
+        users_arr.each do |user|
+            user_id = user.id
+            picks = Pick.find(:all, :conditions => ["user_id = ? and match_id = ? " , user_id, match_id]) 
+            if (picks.size > 0 )
+                if (match.result == picks[0].pick)
+                  score = 1 
+                  result = Result.create(:user_id =>user_id, :pool_id =>pool_id, :match_id =>match_id, :score => score)
+                end
+            end
+        end
+    end
   end
-end
+
+
+end  
+
