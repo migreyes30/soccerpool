@@ -5,7 +5,7 @@ class PrincipalController < ApplicationController
   def main_layout
   	
   	@NO_OPENED_POOL = 0
-  	pool_array = Pool.all(:conditions => "status = 'open'")
+  	pool_array = Pool.all(:conditions => "status = 'opened'")
   	
   	if !(pool_array.size == @NO_OPENED_POOL)
   		@pool_name = pool_array[INDEX_FOR_OPENED_POOL].name
