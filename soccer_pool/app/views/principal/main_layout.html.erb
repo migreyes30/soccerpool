@@ -1,4 +1,3 @@
-<h1>Soccer Pool</h1>
 
 <div id="main_show" 
 				<% if  session["type_user"].to_s == $admin %>  
@@ -19,6 +18,9 @@
 				Local
 			</th>
 			<th>
+				V.S.
+			</th>
+			<th>
 				Visitor
 			</th>
 		</tr>
@@ -26,13 +28,16 @@
   	<tr>
 	    <td class="matches_table_td"><%=h n+1 %></td>
   	  <td class="matches_table_td"><%=h @matches[n].local %></td>
+  	  <td class="matches_table_td">v.s.</td>
 	    <td class="matches_table_td"><%=h @matches[n].visitor %></td>	
  	 	</tr>
 		<% end %>
 	</table>
 
 <% else %>
-
+	<br />
+	<br />
+	<br />
 	<h1><%=h @pool_name %></h1>
 
 <% end %>
