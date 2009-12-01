@@ -1,0 +1,18 @@
+<div id="closing_pool" 
+				<% if  session["type_user"].to_s == $admin %>  
+					 style="position: absolute; left: 320px; top: 50px; z-index:1;"
+				<% else %>
+						style="position: absolute; left: 300px; top: 50px; z-index:1;"
+				<% end %>
+>
+		<% if @unclose_pool.nil?%>
+		
+      <h2> Close the Pool </h2> 
+      
+    <% else %>   
+			<br />
+			<br />
+			<br />
+			<h2 align = "center"><%= @unclose_pool %></h2>
+		<% end %>
+</div>  

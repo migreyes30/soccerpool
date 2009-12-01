@@ -34,12 +34,12 @@
 				<% if  session["type_user"].to_s == $admin %>
 				<tr>
 					<td>
-							<%= link_to "Open a Pool", '/open_pool/input' %>			
+							<%= link_to "Open a Pool", '/open_pool/input' %>
 					</td>
 				</tr>
 				<tr>
 					<td>
-							Close the Pool
+							<%= link_to "Close the Pool", '/close_pool/close' %>
 					</td>
 				</tr>
 				<tr>
