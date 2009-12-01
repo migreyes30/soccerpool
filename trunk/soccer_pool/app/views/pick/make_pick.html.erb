@@ -21,18 +21,27 @@
           </p>
           
           <table>
-              <th>Local</th> <th>  </th> <th>Visitor</th> <th>Winner</th>
-              <% matches.each do |match| %>
-                  <tr> 
-                        <td>  <%= match[2]%> </td>
-                        <td> VS </td>
-                        <td> <%= match[3]%>  </td>
-                        <td> 
-                                <%= select_tag match[4], '<option> local </option>' \
+             <tr>
+               <th> Match # </th>
+               <th> Local </th>
+               <th> V.S. </th>
+               <th> Visitor </th>
+               <th> Your Pick</th>
+            </tr>
+            <% i = 1%>
+                
+            <% matches.each do |match| %>
+                <tr>
+                    <td class="matches_table_td"><%=h i %></td>
+                    <td class="matches_table_td"> <%=h match[2]%> </td>
+                    <td class="matches_table_td">v.s.</td>
+                    <td class="matches_table_td"> <%=h match[3] %> </td>
+                    <td class="matches_table_td"> <%= select_tag match[4], '<option> local </option>' \
                                     '<option> visitor </option>'  \
-                                    '<option>tie</option>' %>
-                        </td>
-                  </tr>
+                                    '<option>tie</option>' %> </td>
+                </tr>
+                <% i = i + 1%>
+                
               <%end%>
          </table>
         <%= submit_tag 'Save' %>

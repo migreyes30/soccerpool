@@ -1,0 +1,25 @@
+<div id="picks_saved" style="position: absolute; left: 300px; top: 50px; z-index:1;"> 
+  <h2>Your picks have been saved.</h2>
+      <table>
+      <tr>
+             <th> Match # </th>
+             <th> Local </th>
+             <th> V.S. </th>
+             <th> Visitor </th>
+             <th> Your Pick</th>
+      </tr>
+      <% i = 1%>
+         
+          <% @table_saved_picks.each do |match| %>                    
+                    <tr>
+                    <td class="matches_table_td"><%=h i %></td>
+                    <td class="matches_table_td"> <%=h match[0] %> </td>
+                    <td class="matches_table_td">v.s.</td>
+                    <td class="matches_table_td"> <%=h match[1] %> </td>
+                    <td class="matches_table_td"> <%=h match[2] %> </td>
+                </tr>
+                <% i = i + 1%>
+          <%end%>
+      </table>  
+        
+  </div>

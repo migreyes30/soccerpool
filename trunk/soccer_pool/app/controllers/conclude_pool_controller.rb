@@ -60,10 +60,18 @@ class ConcludePoolController < ApplicationController
                 if (match.result == picks[0].pick)
                   score = 1 
                   result = Result.create(:user_id =>user_id, :pool_id =>pool_id, :match_id =>match_id, :score => score)
+                  user = User.all(:conditions => ["id = ?", user_id])[0]
+                  if (user.score== nil)
+                    user.score = score
+                  else
+                    user.score+=score
+                  end
+                  user.save
                 end
             end
         end
     end
+      
   end
 
 
