@@ -5,6 +5,8 @@
 						style="position: absolute; left: 300px; top: 50px; z-index:1;"
 				<% end %>
 >
+		<% if @unconcluded_pool.nil?%>
+
       <h2> Poll Conclusion </h2> 
         
       <% matches =  Array.new %>
@@ -43,4 +45,11 @@
          </table>
         <%= submit_tag 'Save' %>
        <% end %> 
+    <% else %>   
+			<br />
+			<br />
+			<br />
+			<h2 align = "center"><%= @unconcluded_pool %></h2>
+		<% end %>
+       
    </div>    
