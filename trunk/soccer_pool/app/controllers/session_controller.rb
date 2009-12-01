@@ -19,6 +19,7 @@ class SessionController < ApplicationController
       $admin = "admin"
       redirect_to "/principal/main_layout"
     else
+    	flash[:error] = "The login or password provided aren't correct. Please re-enter your data!"
       render :action => 'new'
     end
   end

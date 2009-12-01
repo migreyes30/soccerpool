@@ -1,2 +1,26 @@
-<h1>Results#show_results</h1>
-<p>Find me in app/views/results/show_results.html.erb</p>
+<h1>Soccer Pool Results</h1>
+
+<div id="result_show" 
+				<% if  session["type_user"].to_s == $admin %>  
+					 style="position: absolute; left: 320px; top: 50px; z-index:1;"
+				<% else %>
+						style="position: absolute; left: 300px; top: 50px; z-index:1;"
+				<% end %>
+>	
+
+	<h2>Leader: </h2>
+	
+	<table id="matches_tables">
+		<tr>
+			<th>
+				User
+			</th>
+			
+			<th>
+				Total
+			</th>
+		</tr>
+		
+	</table>
+
+</div>
