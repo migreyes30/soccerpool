@@ -1,9 +1,36 @@
 class PickController < ApplicationController
 	
   def make_pick
-    pool_arr= Pool.find(:all, :conditions => "status = 'opened'") 
-    @pool_name = pool_arr[0].name
-    @pool_matches_arr = pool_arr[0].matches
+    
+  	@NO_OPENED_POOL = 0
+  	pool_array = Pool.all(:conditions => "status = 'opened'")
+  	
+  	if pool_array.size == @NO_OPENED_POOL
+  	
+  		@NO_CLOSED_POOL = 0
+  		open_pool = Pool.all(:conditions => "status = 'closed'")
+  		if open_pool.size == @NO_CLOSED_POOL
+ 		 		@unconcluded_pool = %Q{
+ 		 			You can't make a pick to a pool!<br /><br />
+  				All the pools are conclude!<br /><br />
+  				Please, look for the results!
+  			}
+  		else
+ 		 		@unconcluded_pool = %Q{
+  				The current pool: #{open_pool[0].name} is closed!<br /><br />
+  				#{open_pool[0].name} status: #{open_pool[0].status}<br /><br />
+					Please, look for the results!
+  			}
+  		end
+  		
+  	else
+  	
+    	pool_arr= Pool.find(:all, :conditions => "status = 'opened'") 
+    	@pool_name = pool_arr[0].name
+    	@pool_matches_arr = pool_arr[0].matches
+    
+    end
+    
   end
 
   def save
