@@ -4,14 +4,15 @@
   </head>
   
   <body>
+    <div  id="generate_matches" style="position: absolute; left: 200px;">
        <h1> Open Pool <%= h @pool_name %> </h1> 
        <% form_tag :action => 'draw' do %>
           <p>
             Please input the number of matches for the pool:
-              <%= text_field_tag 'number', @n %>
+              <%= text_field_tag 'number' %>
           </p>
           <%= submit_tag 'Generate' %>
        <% end %>
-       
+    </div>   
   </body>
 </html>

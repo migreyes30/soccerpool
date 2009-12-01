@@ -1,24 +1,27 @@
 <html>
   <head>
-      <title> Open Pool <%= h @pool_name %> </title>
+      <title> Pool <%= h @pool_name %> </title>
   </head>
   
   <body>
-       <h1>Open Pool <%= h @pool_name %> </h1> 
+  <div  id="generated_matches" style="position: absolute; left: 200px;">
+       <h1> Pool <%= h @pool_name%> is saved </h1> 
+       
       
-          <p>
-            There are <%= @number %> matches :
-          </p>
-        
-          <table>
-              <% @number.times do |i| %>
-                  <tr> 
-                        <td> match <%= i%> </td>
-                        <td> <%= @matches_array[i].local %> </td>
-                        <td> <%= @matches_array[i].visitor %> </td>
-                  </tr>
-              <%end%>
-         </table>
+  <table>
+      <th>Local</th><th>Visitor</th>
+      <% @parametros.each_key do |key| %>
+                <%if  key.include?("local") %>
+                <tr>
+                    <td> <%= @parametros[key] %> </td>
+                    <td> <%= @parametros["visitor#{key[5..key.size-1]}"] %> </td>
+                </tr>
+                <%end%>
          
+      <%end%>
+  </table>    
+
+
+  </div>   
   </body>
 </html>

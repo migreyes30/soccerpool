@@ -1,28 +1,43 @@
 <html>
   <head>
-      <title> Open Pool <%= h @pool_name %> </title>
+      <title> New Pool </title>
   </head>
   
   <body>
-       <h1>Open Pool <%= h @pool_name %> </h1> 
+  <div  id="new_matches" style="position: absolute; left: 200px;">
+
+      <h1> New Pool </h1> 
+        
+      <% names=  Array.new %>
+      <% (@number*2).times do |i|%>
+        <% names[i*2]= "local#{i}" %>
+        <% names[i*2+1]= "visitor#{i}" %>
+      <%end%>
+      
+      
+      
+      <% form_tag :action => 'save' do %>  
       
           <p>
-            There are <%= @number %> matches :
+            Please input a pool name:
+              <%= text_field_tag 'pool_name' %>
           </p>
         
-        
-        <% form_tag :action => 'save' do %>
+          <p>
+            Please input the teams for each of the  <%= @number %> matches :
+          </p>
+          
           <table>
               <% @number.times do |i| %>
                   <tr> 
                         <td> match <%= i%> </td>
-                        <td> <%= text_field_tag 'local', @matches_array[i].local %> </td>
-                        <td> <%= text_field_tag 'visitor', @matches_array[i].visitor %> </td>
+                        <td> <%= text_field_tag names[i*2] %> </td>
+                        <td> <%= text_field_tag names[i*2+1]%> </td>
                   </tr>
               <%end%>
          </table>
         <%= submit_tag 'Save' %>
        <% end %> 
-       
+   </div>    
   </body>
 </html>
