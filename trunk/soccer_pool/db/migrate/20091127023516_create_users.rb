@@ -1,3 +1,10 @@
+# ITESM CEM, December 1, 2009.
+# Ruby Source File
+# Activity: Soccer Pool
+# Authors:
+# 967171 Maricela Obeso
+# 466044 Miguel Ramirez
+
 class CreateUsers < ActiveRecord::Migration
   def self.up
     create_table "users", :force => true do |t|

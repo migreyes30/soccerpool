@@ -30,14 +30,15 @@ ActiveRecord::Schema.define(:version => 20091128235825) do
 
   create_table "pools", :force => true do |t|
     t.string   "name"
-    t.boolean  "status"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "results", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "pool"
+    t.integer  "pool_id"
+    t.integer  "match_id"
     t.integer  "score"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -52,6 +53,8 @@ ActiveRecord::Schema.define(:version => 20091128235825) do
     t.datetime "updated_at"
     t.string   "remember_token"
     t.datetime "remember_token_expires_at"
+    t.boolean  "type"
+    t.integer  "score"
   end
 
 end

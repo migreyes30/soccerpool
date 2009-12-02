@@ -1,3 +1,10 @@
+# ITESM CEM, December 1, 2009.
+# Ruby Source File
+# Activity: Soccer Pool
+# Authors:
+# 967171 Maricela Obeso
+# 466044 Miguel Ramirez
+
 class UsersController < ApplicationController
 	layout 'general'
   # Be sure to include AuthenticationSystem in Application Controller instead

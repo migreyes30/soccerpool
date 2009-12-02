@@ -1,4 +1,11 @@
 # This controller handles the login/logout function of the site.  
+# ITESM CEM, December 1, 2009.
+# Ruby Source File
+# Activity: Soccer Pool
+# Authors:
+# 967171 Maricela Obeso
+# 466044 Miguel Ramirez
+
 class SessionController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
   layout 'general'
